@@ -11,7 +11,7 @@ SDAM = get_sum_deviations(Array);
 % combination of classes
 for i=1:total    
     class_1 = Array(1:i);
-    class_2 = Array(i:total);
+    class_2 = Array(i+1:total);
     
     s1 = get_sum_deviations(class_1);
     s2 = get_sum_deviations(class_2);
